@@ -1,0 +1,96 @@
+/**** Resets & Base Styles ****/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+    font-family: Sansita, serif
+}
+
+p, li  {
+    font-size: small
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 40px
+}
+
+span {
+    margin: 2px
+}
+
+.ftr {
+    padding: 25px;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 120%;
+}
+/*** End Base Styles ***/
+
+/*** Navbar Styling ***/
+.navbar .navbar-expand-lg {
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    color: floralwhite;
+    font-family: Sansita, serif;
+    font-size: 42px;
+}
+
+.nav-list {
+    position: relative;
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+}
+/*** End Navbar ***/
+
+/*** Cards / Data Layout ***/
+.books {
+    padding: 25px;
+    position: relative;
+    left: 5%;
+    width: 80%;
+}
+
+.publisher {
+    padding: 25px;
+    position: relative;
+    left: 40px;
+}
+ /*** End Data Layout ***/
+
+/*** Form Styles ***/
+.form {
+    height: 50%;
+    width:70%;
+    padding: 10px;
+    position: relative;
+    left: 48px;
+}
+
+.form-group {
+    width: 40%;
+}
+/*** End Forms ***/
+
+/*** Message Styles ***/
+.login-msg {
+    position: relative;
+    left: 48px;
+}
+/*** End Messages ***/

@@ -7,6 +7,22 @@ Packages are also available to be reused as needed. Each package is self suffici
 You can plug in these packages into other python applications if wanted to reuse
 again in another project.
 
+## Technologies Used
+
+* HTML5
+* CSS3
+* Flask-Bootstrap (framework)
+* Python
+* Flask
+* PostgreSQL 12.1
+* S3 (image storage)
+* Heroku
+* Github
+* Git
+* PyCharm (code editor)
+* SQLAlchemy (ORM)
+* Virtual Environment (venv)
+
 ## PostGreSQL Database
 
 version: PostgreSQL 12.1 / PostGIS 3.0.0 / plv8 2.3.13
