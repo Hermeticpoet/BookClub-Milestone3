@@ -25,6 +25,6 @@ a later date.
 
 Assistance for this project was provided by Code Institute tutor Michael. I also
 borrowed heavily from a number of online tutorials, including Michael Schafer's
-[Flask Web App Tutorial series](https://www.youtube.com/watch?v=MwZwr5Tvyxo&t=37s), Anthony Herbert from [Pretty Printed](https://www.youtube.com/watch?v=EnJKHVEzHFw, Udemy courses [https://www.udemy.com/course/python-flask-make-web-apps-with-python/](https://www.udemy.com/course/python-flask-beginners/)
-by Frank Anemaet and [Python Flask for Beginners: Build a CRUD web app using Flask](https://www.udemy.com/course/python-flask-beginners/) by 
+[Flask Web App Tutorial series](https://www.youtube.com/watch?v=MwZwr5Tvyxo&t=37s), Anthony Herbert from [Pretty Printed](https://www.youtube.com/watch?v=EnJKHVEzHFw), Udemy courses [Python Flask Web Apps](https://www.udemy.com/course/python-flask-beginners/)
+by Frank Anemaet and [Python Flask for Beginners](https://www.udemy.com/course/python-flask-beginners/) by 
 Ioannis Giftakis. 
