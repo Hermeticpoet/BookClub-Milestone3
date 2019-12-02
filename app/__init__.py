@@ -20,6 +20,9 @@ def create_app(config_type):
     from app.catalog import main  # Import Blueprint
     app.register_blueprint(main)  # Register Blueprint
 
+    from app.auth import authentication
+    app.register_blueprint(authentication)
+
     return app
 
 

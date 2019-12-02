@@ -62,23 +62,22 @@ span {
 }
 
 .publisher {
-    padding: 25px;
+    padding: 1.6rem;
     position: relative;
-    left: 40px;
 }
  /*** End Data Layout ***/
 
 /*** Form Styles ***/
 .form {
-    height: 50%;
-    width:70%;
-    padding: 10px;
+    height: 60%;
+    width:80%;
+    padding: 0.5rem;
     position: relative;
-    left: 48px;
+    /*left: 48px;*/
 }
 
 .form-group {
-    width: 40%;
+    width: 60%;
 }
 /*** End Forms ***/
 
