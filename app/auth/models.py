@@ -17,7 +17,7 @@ class User(db.Model):
 
         user = cls(user_name=user,
                    user_email=email,
-                   user_password=bcrypt.generate_password_hash(password).decode(utf-8)
+                   user_password=bcrypt.generate_password_hash(password).decode("utf-8")
                    )
 
         db.session.add(user)
