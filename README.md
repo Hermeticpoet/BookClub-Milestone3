@@ -63,6 +63,14 @@ A responsive design that allows for ease of use on any device and screen.
 * SQLAlchemy (ORM)
 * Virtual Environment (venv)
 
+The use of flask-bootstrap has somewhat thrown off my styles. I like the convenient use of in-built Macros
+such as, Forms, which builds the forms out nicely, however, my styles are not being applied. I am not as yet
+sure whether this is artifact of flask-bootstrap being more suited to Bootstrap3 and I am using Bootstrap4?
+I shall continue for now but keep in mind this issue for later resolution. The easier option may just be to
+use Bootstrap3 rather than 4 as my framework. If however, I can custom style the forms macros then I will
+continue with my use of Bootstrap4 instead.
+
+
 ### PostGreSQL Database
 
 version: PostgreSQL 12.1 / PostGIS 3.0.0 / plv8 2.3.13. Also installed psycopg2-binary==2.8.4 in order 
