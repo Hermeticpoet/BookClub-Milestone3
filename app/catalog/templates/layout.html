@@ -39,6 +39,15 @@
               <li>
                   <a class="nav-link" href="#">Sign-In</a>
               </li>
+              <li>
+                  <a href="">
+                      {%  if current_user.is_authenticated %}
+                          LoggedIn as <b style="color: deeppink">{{ current_user.user_name.title() }}</b>
+                      {% else %}
+                          Not LoggedIn
+                      {% endif %}
+                  </a>
+              </li>
             </ul>
           </div>
           </div>

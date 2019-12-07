@@ -1,5 +1,5 @@
-from datetime import datetime  # app/__init__.py
-from app import db, bcrypt
+from datetime import datetime
+from app import db, bcrypt  # app/__init__.py
 from flask_login import UserMixin
 from app import login_manager
 
@@ -12,6 +12,9 @@ class User(UserMixin, db.Model):
     user_email = db.Column(db.String(60), unique=True, index=True)
     user_password = db.Column(db.String(60))
     registration_date = db.Column(db.DateTime, default=datetime.now)
+
+    def check_password(self, password):
+        return bcrypt.check_password_hash(self.user_password, password)
 
     # Class methods are belong to a class but are not associated with any class instance
     @classmethod
