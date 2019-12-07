@@ -40,10 +40,12 @@ these packages into other python applications if wanted to reuse the components 
 ## UX
 
 A book catalogue that can house referencable information about a variety of books in one place.
-Simplistic and intuitive design and layout.
-Clear user prompts for site navigation, if needed.
-Security of information storage, particularly email and passwords.
-A responsive design that allows for ease of use on any device and screen.
+Simplistic and intuitive design and layout. Clear user prompts for site navigation, if needed.
+Security of information storage, particularly email and passwords. A responsive design that allows 
+for ease of use on any device and screen. 
+
+The design of the site is largely borrowed from the Udemy course 'Scalable Web Applications with Python'.
+I have also used much of the database from that course to populate my own database of books and images.
 
 
 ### Technologies Used
@@ -82,9 +84,16 @@ books produced by that publisher can be queried and returned to the user upon re
 
 See Design Images folder for database schema: [design-imgs](design-imgs/database)
 
+### Issues Resolved
+
+I did have some issues getting a clear answer from the Flask-Bootstrap documentation about how to add custom
+classes to their quick_forms() object. I found some great answers however on [StackOverflow]("https://stackoverflow.com/questions/33145556/flask-bootstrap-flask-wtf-adding-class-to-submit-button")
+that solved that issue. I did, however, still have to use the `!important` in my css style rules
+to override the 'Flask-Bootstrap' btn style of transparent.
+
 ### Images
 
-The svg images where taken from a free to use site: [flaticon](https://www.flaticon.com/)
+The svg images where taken from a free to use site: [flaticon](https://www.flaticon.com/). 
 The images are stored locally in the static folder in the img directory. I will attempt
 to set up S3 for storing user uploaded images but if that is not possible then
 I will stick with the local folder storage and come back to the set up of S3 at
@@ -97,3 +106,6 @@ borrowed heavily from a number of online tutorials, including Michael Schafer's
 [Flask Web App Tutorial series](https://www.youtube.com/watch?v=MwZwr5Tvyxo&t=37s), Anthony Herbert from [Pretty Printed](https://www.youtube.com/watch?v=EnJKHVEzHFw), Udemy courses [Python Flask Web Apps](https://www.udemy.com/course/python-flask-beginners/)
 by Frank Anemaet and [Python Flask for Beginners](https://www.udemy.com/course/python-flask-beginners/) by 
 Ioannis Giftakis. 
+
+The documentation used throughout this project was invaluable. Those include; [Flask]("https://flask.palletsprojects.com/en/1.1.x/"), [Flask-Login]("https://flask-login.readthedocs.io/en/latest/"),
+[Bootstrap4]("https://getbootstrap.com/docs/4.0/getting-started/introduction/"), [Jinja2]("https://jinja.palletsprojects.com/en/2.10.x/") and [Flask-SQLAlchemy]("https://flask-sqlalchemy.palletsprojects.com/en/2.x/").
