@@ -1,8 +1,10 @@
-from datetime import datetime
-from app import db, bcrypt  # app/__init__.py
+from datetime import datetime  # app/__init__.py
+from app import db, bcrypt
+from flask_login import UserMixin
+from app import login_manager
 
 
-class User(db.Model):
+class User(UserMixin, db.Model):
     __tablename__ = "users"
 
     id = db.Column(db.Integer, primary_key=True)
@@ -23,3 +25,10 @@ class User(db.Model):
         db.session.add(user)
         db.session.commit()
         return user
+
+
+# This function returns the user id in unicode so must be wrapped in int() method
+@login_manager.user_loader
+def load_user(id):
+    return User.query.get(int(id))
+
