@@ -91,6 +91,13 @@ classes to their quick_forms() object. I found some great answers however on [St
 that solved that issue. I did, however, still have to use the `!important` in my css style rules
 to override the 'Flask-Bootstrap' btn style of transparent.
 
+There was a problem with the bottom publisher id links not working early on as well. The cursor pointer was not working
+and so you could not click on the links. If I opened the code, I could see that the links were there and they were 
+clickable. I eventually realised that the footer was collapsing over the bottom of the book container element and so
+the links could not be reached. Therefore, I simply added a couple of break tags after the publisher id within
+the display books home page and this created better spacing for all the items, as well as correcting for the
+issue with the footer blocking the final items links.
+
 ### Images
 
 The svg images where taken from a free to use site: [flaticon](https://www.flaticon.com/). 

@@ -9,11 +9,15 @@ html, body {
 }
 
 h1, h2, h3, h4 {
-    font-family: Sansita, serif
+    font-family: Sansita, serif;
 }
 
 p, li  {
-    font-size: small
+    font-size: small;
+}
+
+.container {
+    padding: 0 !important;
 }
 
 footer {
@@ -21,15 +25,15 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
-    height: 40px
+    height: 40px;
 }
 
 span {
-    margin: 2px
+    margin: 2px;
 }
 
 .ftr {
-    padding: 25px;
+    padding: 1.8rem;
 }
 
 .wrapper {
@@ -56,6 +60,10 @@ span {
 /*** End Navbar ***/
 
 /*** Cards / Data Layout ***/
+.container .books .row {
+    margin-bottom: 4rem !important;
+}
+
 .books {
     padding: 1.6rem;
     position: relative;
@@ -82,9 +90,12 @@ span {
 /*** End Forms ***/
 
 /*** Message Styles ***/
-.login-msg {
+#login-text {
     position: relative;
-    left: 48px;
+    top: 1rem;
+    text-decoration: none;
+    font-size: .8rem;
+    color: #007bff;
 }
 /*** End Messages ***/
 
