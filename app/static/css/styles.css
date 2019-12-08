@@ -16,9 +16,9 @@ p, li  {
     font-size: small;
 }
 
-.container {
-    padding: 0 !important;
-}
+/*.container {*/
+/*    padding: 0 !important;*/
+/*}*/
 
 footer {
     position: absolute;
@@ -91,11 +91,8 @@ span {
 
 /*** Message Styles ***/
 #login-text {
-    position: relative;
-    top: 1rem;
     text-decoration: none;
-    font-size: .8rem;
-    color: #007bff;
+    pointer-events: none;
 }
 /*** End Messages ***/
 

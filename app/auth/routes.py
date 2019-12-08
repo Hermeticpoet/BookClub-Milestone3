@@ -1,9 +1,10 @@
 from flask import render_template, request, flash, redirect, url_for
-from flask_login import login_user, logout_user
+from flask_login import login_user, logout_user, login_required, current_user
 from app.auth.forms import RegistrationForm, LoginForm
 from app.auth import authentication as at
 from app.catalog import main
 from app.auth.models import User
+
 
 '''
 Both of these functions are using objects imported from the "app.auth.forms" module.
@@ -20,6 +21,9 @@ log in once again.
 '''
 @at.route("/register", methods=["GET", "POST"])
 def register_user():
+    if current_user.is_authenticated:
+        flash("You have already registered!")
+        return redirect(url_for('main.display_books'))
     form = RegistrationForm()
     if form.validate_on_submit():
         User.create_user(
@@ -33,6 +37,9 @@ def register_user():
 
 @at.route("/login", methods=["GET", "POST"])
 def log_user_in():
+    if current_user.is_authenticated:
+        flash("You are already logged in!")
+        return redirect(url_for('main.display_books'))
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(user_email=form.email.data).first()
@@ -44,3 +51,19 @@ def log_user_in():
         return redirect(url_for("main.display_books"))
 
     return render_template("login.html", form=form)
+
+
+"""
+The logout route is one of the easiest. The logout_user() method
+simply deletes the users details from the session & they are
+then logged out. The user variables are not available any more
+from within the session. We must also make sure the user was logged 
+actually logged in before they can have the option to log out. To
+do this, we add the @login_required decorator to our view.
+"""
+@at.route("/logout")
+@login_required
+def log_out_user():
+    logout_user()
+    return redirect(url_for('main.display_books'))
+
