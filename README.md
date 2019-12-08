@@ -115,4 +115,5 @@ by Frank Anemaet and [Python Flask for Beginners](https://www.udemy.com/course/p
 Ioannis Giftakis. 
 
 The documentation used throughout this project was invaluable. Those include; [Flask]("https://flask.palletsprojects.com/en/1.1.x/"), [Flask-Login]("https://flask-login.readthedocs.io/en/latest/"),
-[Bootstrap4]("https://getbootstrap.com/docs/4.0/getting-started/introduction/"), [Jinja2]("https://jinja.palletsprojects.com/en/2.10.x/") and [Flask-SQLAlchemy]("https://flask-sqlalchemy.palletsprojects.com/en/2.x/").
+[Bootstrap4]("https://getbootstrap.com/docs/4.0/getting-started/introduction/"), [Jinja2]("https://jinja.palletsprojects.com/en/2.10.x/") and [Flask-SQLAlchemy]("https://flask-sqlalchemy.palletsprojects.com/en/2.x/"),
+[Custom Errors]("https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/").

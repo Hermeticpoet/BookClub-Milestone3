@@ -104,6 +104,11 @@ span {
     text-decoration: none;
     pointer-events: none;
 }
+
+#error404 {
+    font-size: 3rem;
+    margin-top: 3rem;
+}
 /*** End Messages ***/
 
 /*** Component Styles ***/
@@ -125,6 +130,22 @@ span.label.label-info {
     background: #007bff;
     padding: 0.3rem 0.5rem;
     border: 1px solid #007bff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+span.label.label-success {
+    background: forestgreen;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid forestgreen;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+span.label.label-primary {
+    background: darkslateblue;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid darkslateblue;
     border-radius: 0.25rem;
     text-decoration: none;
 }
