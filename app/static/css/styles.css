@@ -73,6 +73,16 @@ span {
     padding: 1.6rem;
     position: relative;
 }
+
+.delete-book {
+    margin-top: 2rem;
+}
+
+#book-delete-warning,
+#book-edit-info {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
  /*** End Data Layout ***/
 
 /*** Form Styles ***/
@@ -101,5 +111,21 @@ span {
     color: #fff !important;
     background-color: #007bff !important;
     border-color: #007bff !important;
+}
+
+span.label.label-warning {
+    background: red;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid red;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+span.label.label-info {
+    background: #007bff;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #007bff;
+    border-radius: 0.25rem;
+    text-decoration: none;
 }
 /*** End Comp Styles ***/
