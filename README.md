@@ -125,6 +125,19 @@ a basic summary or more in keeping with the essence of the application, a refere
 a standard review. 
 
 
+### Deployment
+
+On the Heroku main page click "create new app". Choose a name and server host destination. Then after the app
+is created, click on resources and type in "postgreSQL" to create a database on the platform for your app.
+Heroku will automatically then generate all the necessaries for you. When the database is created, you can
+then click on its link to check out what has been created. From there, is you click the "settings" tab, you
+further see the credentials for your newly created database. This is information needed to now created the
+environment variables for your own application. The URI in here is a temporary address, as is stated at the
+top of the page. For this reason, we must import the "os" into our "dev.py" file - this will not be the "os"
+for our local machine but the "os" for Heroku. Then, using the `os.environ` dictionary we can tell Heroku to
+get the ever-changing current database URL when the application is running on the platform.
+
+
 
 #### Credits
 
