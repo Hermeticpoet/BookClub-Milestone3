@@ -60,6 +60,7 @@ I have also used much of the database from that course to populate my own databa
 * S3 (image storage)
 * Heroku
 * Github
+* GUnicorn (python http server)
 * Git
 * PyCharm (code editor)
 * SQLAlchemy (ORM)
@@ -71,6 +72,9 @@ sure whether this is artifact of flask-bootstrap being more suited to Bootstrap3
 I shall continue for now but keep in mind this issue for later resolution. The easier option may just be to
 use Bootstrap3 rather than 4 as my framework. If however, I can custom style the forms macros then I will
 continue with my use of Bootstrap4 instead.
+
+[GUnicorn]("https://docs.gunicorn.org/en/stable/run.html") is a python http server that is often used to push or
+serve applications from local environments to hosting platforms, such as, Heroku.
 
 
 ### PostGreSQL Database
