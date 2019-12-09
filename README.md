@@ -106,6 +106,22 @@ to set up S3 for storing user uploaded images but if that is not possible then
 I will stick with the local folder storage and come back to the set up of S3 at
 a later date.
 
+### Features Left to Implement
+
+I had originally began building an 'add_publisher' page with its corresponding routes and classes but time
+constraints have meant that I have not been able to do so at this moment. This is something that I will look
+to implement at a future date. 
+
+The avg_ratings is a nice enough points score but I would possibly look at making this a checkbox type feature
+that user can select or choose a specific icon for a more visual affect. This is not certain as the current
+style is more in keeping with the sleek minimalist, librarian-esque UI of the application.
+
+Although I had never really intended to create any kind of Blog Post, review section, I have thought about
+a basic summary or more in keeping with the essence of the application, a referencing summary, rather than
+a standard review. 
+
+
+
 #### Credits
 
 Assistance for this project was provided by Code Institute tutor Michael. I also

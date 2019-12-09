@@ -76,3 +76,4 @@ def create_book(pub_id):
         flash("Book Added Successfully")
         return redirect(url_for("main.display_publisher", publisher_id=pub_id))
     return render_template("create_book.html", form=form, pub_id=pub_id)
+
