@@ -2,8 +2,7 @@
 
 ## The Brief
 
-To build a Python Flask Web app to be hosted on Heroku platform with fully functioning CRUD capabilities. 
-Data to be housed in a database and then called or presented back to the user through Python queries.
+To build a Python Flask Web app to be hosted on Heroku platform with fully functioning CRUD capabilities. Data to be housed in a database and then called or presented back to the user through Python queries.
 
 
 ## The Project
@@ -127,25 +126,22 @@ a standard review.
 
 ### Deployment
 
-On the Heroku main page click "create new app". Choose a name and server host destination. Then after the app
-is created, click on resources and type in "postgreSQL" to create a database on the platform for your app.
-Heroku will automatically then generate all the necessaries for you. When the database is created, you can
-then click on its link to check out what has been created. From there, is you click the "settings" tab, you
-further see the credentials for your newly created database. This is information needed to now created the
-environment variables for your own application. The URI in here is a temporary address, as is stated at the
-top of the page. For this reason, we must import the "os" into our "dev.py" file - this will not be the "os"
-for our local machine but the "os" for Heroku. Then, using the `os.environ` dictionary we can tell Heroku to
-get the ever-changing current database URL when the application is running on the platform.
+On the Heroku main page click "create new app". Choose a name and server host destination. Then after the app is created, click on resources and type in "postgreSQL" to create a database on the platform for your app. Heroku will automatically then generate all the necessaries for you. When the database is created, you can then click on its link to check out what has been created. From there, is you click the "settings" tab, you further see the credentials for your newly created database. This is information needed to now created the environment variables for your own application. The URI in here is a temporary address, as is stated at the top of the page. For this reason, we must import the "os" into our "dev.py" file - this will not be the "os" for our local machine but the "os" for Heroku. Then, using the `os.environ` dictionary we can tell Heroku to get the ever-changing current database URL when the application is running on the platform.
 
+### Apologies
+
+Unfortunately, due to time constraints with my new job and difficulty experienced during the course. I was unable to complete the material in full. Therefore, given these constraints, I ran into some issues with uploading my database to Heroku. I attempted to do this using AWS S3 Buckets and through the use of a pg_dump file. Both attempts failed and I was not able to resolve the issue in the given time frame. I have had no options at this late stage but to upload my final projects before the deadline closes. I apologize for the unfinished work but I have had no other options available at this time, an extension had already been granted! 
+
+I have included the pg_dump file AND teh dump.sql file that I also attempted to upload to Heroku. These of course contain my database and all its data...
+
+Kind Regards,
+Kevin Walton
 
 
 #### Credits
 
-Assistance for this project was provided by Code Institute tutor Michael. I also
-borrowed heavily from a number of online tutorials, including Michael Schafer's
-[Flask Web App Tutorial series](https://www.youtube.com/watch?v=MwZwr5Tvyxo&t=37s), Anthony Herbert from [Pretty Printed](https://www.youtube.com/watch?v=EnJKHVEzHFw), Udemy courses [Python Flask Web Apps](https://www.udemy.com/course/python-flask-beginners/)
-by Frank Anemaet and [Python Flask for Beginners](https://www.udemy.com/course/python-flask-beginners/) by 
-Ioannis Giftakis. 
+Assistance for this project was provided by Code Institute tutor Michael. I also borrowed heavily from a number of online tutorials, including Michael Schafer's [Flask Web App Tutorial series](https://www.youtube.com/watch?v=MwZwr5Tvyxo&t=37s), Anthony Herbert from [Pretty Printed](https://www.youtube.com/watch?v=EnJKHVEzHFw), Udemy courses [Python Flask Web Apps](https://www.udemy.com/course/python-flask-beginners/)
+by Frank Anemaet and [Python Flask for Beginners](https://www.udemy.com/course/python-flask-beginners/) by Ioannis Giftakis. 
 
 The documentation used throughout this project was invaluable. Those include; [Flask]("https://flask.palletsprojects.com/en/1.1.x/"), [Flask-Login]("https://flask-login.readthedocs.io/en/latest/"),
 [Bootstrap4]("https://getbootstrap.com/docs/4.0/getting-started/introduction/"), [Jinja2]("https://jinja.palletsprojects.com/en/2.10.x/") and [Flask-SQLAlchemy]("https://flask-sqlalchemy.palletsprojects.com/en/2.x/"),

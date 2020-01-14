@@ -4,7 +4,7 @@ from sqlalchemy import exc
 
 
 # We can now simply pass whatever version of the app we wish to run into the function
-flask_app = create_app("prod")
+flask_app = create_app("dev")
 with flask_app.app_context():
     db.create_all()
     try:
